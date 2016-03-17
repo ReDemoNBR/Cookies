@@ -5,5 +5,9 @@
     window.opener.postMessage(navigator.cookieEnabled);
   }
   
+  function Cookies2(){
+    document.documentWindow.innerHTML = navigator.cookieEnabled;
+  }
+  
   window.addEventListener("message", Cookies, false);
 </script>
