@@ -9,5 +9,11 @@
     document.documentElement.innerHTML = navigator.cookieEnabled;
   }
   
-  window.addEventListener("message", Cookies, false);
+  function ReceiveMessage(e){
+    console.log("message received");
+    console.log("message = "+e.data+"; from = "+(e.origin || e.originalEvent.origin));
+    Cookies2();
+  }
+  
+  window.addEventListener("message", ReceiveMessage, false);
 </script>
