@@ -1,5 +1,7 @@
 <script>
   function Cookies(){
-    return navigator.cookieEnabled;
+    window.opener.postMessage(navigator.cookieEnabled);
   }
+  
+  window.addEventListener("message", Cookies, false);
 </script>
