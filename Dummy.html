@@ -1,11 +1,13 @@
 <script>
 window.onload = Cookies;
 function Cookies(){
-  //window.parent.postMessage(Support, "https://n-g7g2ge633l7ui46vu4bdrtbtwuphyvsuihj5jqq-script.googleusercontent.com");
   if(window.parent){
-    if(/thirdparty=yes/.test(document.cookie))
+    if(/thirdparty=yes/.test(document.cookie)){
       window.parent.postMessage(true, "https://n-g7g2ge633l7ui46vu4bdrtbtwuphyvsuihj5jqq-script.googleusercontent.com");
-    else window.parent.postMessage(false, "https://n-g7g2ge633l7ui46vu4bdrtbtwuphyvsuihj5jqq-script.googleusercontent.com");
+    }
+    else{
+      window.parent.postMessage(false, "https://n-g7g2ge633l7ui46vu4bdrtbtwuphyvsuihj5jqq-script.googleusercontent.com");
+    }
   }
 }
 </script>
