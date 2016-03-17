@@ -3,10 +3,10 @@ window.onload = Cookies;
 function Cookies(){
   if(window.parent){
     if(/thirdparty=yes/.test(document.cookie)){
-      window.parent.postMessage(true, "https://n-g7g2ge633l7ui46vu4bdrtbtwuphyvsuihj5jqq-script.googleusercontent.com");
+      window.parent.postMessage(true, "*");
     }
     else{
-      window.parent.postMessage(false, "https://n-g7g2ge633l7ui46vu4bdrtbtwuphyvsuihj5jqq-script.googleusercontent.com");
+      window.parent.postMessage(false, "*");
     }
   }
 }
