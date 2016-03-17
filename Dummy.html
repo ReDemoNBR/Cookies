@@ -1,6 +1,7 @@
 <script>
   window.onload = Cookies;
   function Cookies(){
-    document.documentElement.innerHTML = navigator.cookieEnabled;
+    var Support = navigator.cookieEnabled;
+    window.parent.postMessage(Support, "https://n-g7g2ge633l7ui46vu4bdrtbtwuphyvsuihj5jqq-script.googleusercontent.com")
   }
 </script>
