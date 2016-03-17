@@ -1,0 +1,4 @@
+<script>
+document.cookie = "ReDCookie=ReD";
+document.location = "Check.html";
+</script>
