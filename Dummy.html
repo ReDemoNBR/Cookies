@@ -1,6 +1,7 @@
 <script>
   window.onload = Cookies;
   function Cookies(){
+    console.log("child... Checking Cookies");
     window.opener.postMessage(navigator.cookieEnabled);
   }
   
