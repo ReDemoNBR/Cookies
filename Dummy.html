@@ -1,19 +1,6 @@
 <script>
-  //window.onload = Cookies;
+  window.onload = Cookies;
   function Cookies(){
-    //console.log("child... Checking Cookies");
-    //window.opener.postMessage(navigator.cookieEnabled);
-  }
-  
-  function Cookies2(){
     document.documentElement.innerHTML = navigator.cookieEnabled;
   }
-  
-  function ReceiveMessage(e){
-    console.log("message received");
-    console.log("message = "+e.data+"; from = "+(e.origin || e.originalEvent.origin));
-    Cookies2();
-  }
-  
-  window.addEventListener("message", ReceiveMessage, false);
 </script>
